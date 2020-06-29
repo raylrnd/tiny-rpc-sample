@@ -1,15 +1,14 @@
 package com.sample.server;
 
-
-import com.example.autoconfig.annotation.MyService;
+import com.example.autoconfig.annotation.Provider;
 import com.sample.api.IRemoteService;
 
 /**
  * @auther zhongshunchao
- * @date 2020/5/21 3:00 下午
+ * @date 27/06/2020 10:07
  */
-@MyService(interfaceClass = IRemoteService.class)
-public class RemoteService implements IRemoteService{
+@Provider(interfaceClass = IRemoteService.class, port = 8788, weight = 2)
+public class RemoteServiceImpl2 implements IRemoteService {
 
     @Override
     public String hello(String message) {
