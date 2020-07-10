@@ -9,19 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>server-test</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>server-test1</artifactId>
     <modules>
-        <module>server-api</module>
-        <module>server-sample</module>
+        <module>server-api1</module>
+        <module>server-sample1</module>
     </modules>
+    <packaging>pom</packaging>
+    <name>server-test1</name>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-
 
 
     <build>

@@ -11,12 +11,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloWorld {
     //client端通过接口的全限定名去zk注册中心寻找服务地址
-    @Reference(async = true, callback = true)
+    @Reference(async = true)
     public IRemoteService helloService;
 
     public String run() {
-        String result = helloService.hello("zhong shun chao");
-        return result;
+        return helloService.hello("zhong shun chao");
     }
 
 }

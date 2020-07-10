@@ -18,8 +18,6 @@ public class HelloWorldController {
 
     @RequestMapping("/hello")
     public String hello(){
-        String result = helloWorld.run();
-        System.out.println(result);
-        return result;
+        return helloWorld.run();
     }
 }

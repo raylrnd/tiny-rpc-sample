@@ -7,6 +7,7 @@
   <modules>
     <module>client-test</module>
     <module>server-test</module>
+    <module>server-test1</module>
   </modules>
   <groupId>com.tinyrpc.test</groupId>
   <artifactId>tiny-rpc-sample</artifactId>
