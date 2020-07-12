@@ -1,7 +1,7 @@
 package com.sample.client.demo;
 
 import com.example.autoconfig.annotation.Reference;
-import com.sample.api.IRemoteService;
+import com.sample.api.IRemoteServiceFirst;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
 public class HelloWorld {
     //client端通过接口的全限定名去zk注册中心寻找服务地址
     @Reference(async = true)
-    public IRemoteService helloService;
+    public IRemoteServiceFirst helloService;
 
     public String run() {
-        return helloService.hello("zhong shun chao");
+        return helloService.hello("hello world");
     }
 
 }
